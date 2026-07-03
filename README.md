@@ -113,20 +113,19 @@ This website provides structured learning, real-world examples, and an interacti
 
 ---
 
-## 📂 Project Structure
-
-phishing-awareness-website/
-
-├── index.html # Main webpage
-
-├── style.css # Styling file
-
-├── script.js # JavaScript logic
-
-└── README.md # Project documentation
-
-
----
+## **📁 Project Structure**
+```
+phishing_awarness/
+│   │── index.html
+│   ├── script.js
+│   ├── style.css
+│
+│── screenshot/
+│   ├── result.png
+│
+│── app.py
+│── README.md
+```
 
 ## 🚀 How to Run
 

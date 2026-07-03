@@ -142,13 +142,13 @@ index.html
 
 ## 📸 Screenshots
 
-![p1](screenshot/p1.png)
+![p1](screenshoot/p1.png)
 
-![p2](screenshot/p2.png)
+![p2](screenshoot/p2.png)
 
-![p3](screenshot/p3.png)
+![p3](screenshoot/p3.png)
 
-![p4](screenshot/p4.png)
+![p4](screenshoot/p4.png)
 
 ---
 

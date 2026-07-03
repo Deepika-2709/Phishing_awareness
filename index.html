@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhishGuard | Phishing Awareness Training</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="#home" class="logo">
+      <span class="logo-mark">🪝</span>
+      <span class="logo-text">Phish<span class="accent">Guard</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#what-is-phishing">What is Phishing</a>
+      <a href="#types">Types</a>
+      <a href="#recognize">Spot Emails</a>
+      <a href="#fake-sites">Fake Sites</a>
+      <a href="#social-engineering">Tactics</a>
+      <a href="#prevention">Prevention</a>
+      <a href="#examples">Real Cases</a>
+      <a href="#quiz" class="nav-cta">Take the Quiz</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HOME / HERO ============ -->
+<section id="home" class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-content">
+    <p class="eyebrow">// Security Awareness Training</p>
+    <h1>One click is all it takes.<br>Learn to spot the hook <span class="accent">before it sets.</span></h1>
+    <p class="hero-sub">Phishing is the #1 way attackers break into inboxes, bank accounts, and companies —
+      not through clever code, but through a convincing message and a hurried click.
+      This free course teaches you to recognize the bait, question the urgency, and stay safe online.</p>
+    <div class="hero-actions">
+      <a href="#what-is-phishing" class="btn btn-primary">Start Learning</a>
+      <a href="#quiz" class="btn btn-outline">Test Your Skills</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">3.4B</span><span class="stat-label">phishing emails sent daily</span></div>
+      <div class="stat"><span class="stat-num">90%</span><span class="stat-label">of breaches start with phishing</span></div>
+      <div class="stat"><span class="stat-num">1 in 4</span><span class="stat-label">people click malicious links</span></div>
+    </div>
+  </div>
+  <div class="hero-mail">
+    <div class="mail-window">
+      <div class="mail-bar"><span></span><span></span><span></span></div>
+      <div class="mail-row"><strong>From:</strong> security-alert@paypa1-support.com</div>
+      <div class="mail-row"><strong>Subject:</strong> ⚠ Urgent: Verify your account now</div>
+      <div class="mail-body">
+        Dear Customer,<br><br>
+        We detected unusual activity. Your account will be
+        <span class="flag" data-tip="Fear + urgency tactic">suspended in 24 hours</span>
+        unless you <span class="flag" data-tip="Suspicious shortened / fake link">verify here</span>.
+        <br><br>Regards,<br>Account Team
+      </div>
+    </div>
+    <p class="mail-caption">Hover the highlighted text →</p>
+  </div>
+</section>
+
+<main>
+
+<!-- ============ WHAT IS PHISHING ============ -->
+<section id="what-is-phishing" class="section">
+  <div class="section-head">
+    <p class="eyebrow">01 · Foundations</p>
+    <h2>What is Phishing?</h2>
+  </div>
+  <div class="grid-2">
+    <div class="card text-card">
+      <p><strong>Phishing</strong> is a type of cyberattack where criminals impersonate a trusted person,
+      brand, or organization — like your bank, a delivery company, or even your boss — to trick you into
+      handing over sensitive information such as passwords, OTPs, credit card numbers, or to get you to
+      install malware.</p>
+      <p>The name is a play on "fishing": attackers cast out bait (a fake email, message, or website) and
+      wait for someone to bite. Unlike hacking a system directly, phishing hacks a <em>person</em> —
+      it relies on psychology, not just technology.</p>
+      <p>Phishing can arrive through email, text messages, phone calls, social media, or fake websites,
+      and it is the starting point for the vast majority of data breaches and ransomware attacks worldwide.</p>
+    </div>
+    <div class="card highlight-card">
+      <h3>Why it works</h3>
+      <ul class="check-list">
+        <li>It exploits <strong>trust</strong> in familiar brands and people.</li>
+        <li>It creates <strong>urgency</strong> so victims act before thinking.</li>
+        <li>It looks <strong>convincingly real</strong> — logos, tone, formatting.</li>
+        <li>It targets <strong>emotion</strong> (fear, greed, curiosity) over logic.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TYPES OF PHISHING ============ -->
+<section id="types" class="section section-alt">
+  <div class="section-head">
+    <p class="eyebrow">02 · Attack Vectors</p>
+    <h2>Types of Phishing</h2>
+  </div>
+  <div class="grid-4">
+    <div class="card type-card">
+      <div class="type-icon">📧</div>
+      <h3>Email Phishing</h3>
+      <p>Mass emails sent to thousands of people, pretending to be a bank, retailer, or service provider,
+      asking you to click a link or open an attachment.</p>
+    </div>
+    <div class="card type-card">
+      <div class="type-icon">🎯</div>
+      <h3>Spear Phishing</h3>
+      <p>A targeted attack aimed at one person or organization, using personal details (name, role, company)
+      to appear highly credible and specific.</p>
+    </div>
+    <div class="card type-card">
+      <div class="type-icon">📱</div>
+      <h3>Smishing (SMS)</h3>
+      <p>Phishing via text message — often fake delivery alerts, prize notifications, or bank warnings
+      with a malicious link.</p>
+    </div>
+    <div class="card type-card">
+      <div class="type-icon">☎️</div>
+      <h3>Vishing (Voice)</h3>
+      <p>Phone call scams where attackers impersonate bank staff, tech support, or government officials
+      to extract information verbally.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RECOGNIZE PHISHING EMAILS ============ -->
+<section id="recognize" class="section">
+  <div class="section-head">
+    <p class="eyebrow">03 · Detection</p>
+    <h2>How to Recognize Phishing Emails</h2>
+  </div>
+  <div class="grid-2">
+    <div class="card">
+      <h3>🚩 Red Flags to Watch For</h3>
+      <ul class="check-list">
+        <li>Generic greetings like "Dear Customer" instead of your real name.</li>
+        <li>Sender address that looks close, but not exact — e.g. <code>support@paypa1.com</code>.</li>
+        <li>Urgent or threatening language: "act now", "account suspended".</li>
+        <li>Spelling, grammar, or formatting mistakes.</li>
+        <li>Unexpected attachments or links you weren't expecting.</li>
+        <li>Requests for passwords, OTPs, or payment details via email.</li>
+        <li>Mismatched or suspicious links — hover before you click.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>📩 Example: Annotated Phishing Email</h3>
+      <div class="mail-window static-mail">
+        <div class="mail-row"><strong>From:</strong> Amaz0n-Rewards@delivery-notice.info
+          <span class="badge bad">Fake domain</span></div>
+        <div class="mail-row"><strong>Subject:</strong> Congratulations! Claim your $500 gift card
+          <span class="badge bad">Too good to be true</span></div>
+        <div class="mail-body">
+          Dear Valued Customer, <span class="badge bad">Generic greeting</span><br><br>
+          You have been randomly selected. Click <u>here</u> within 12 hours
+          <span class="badge bad">Urgency</span> to claim your reward.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAKE WEBSITES ============ -->
+<section id="fake-sites" class="section section-alt">
+  <div class="section-head">
+    <p class="eyebrow">04 · Detection</p>
+    <h2>How to Identify Fake Websites</h2>
+  </div>
+  <div class="grid-3">
+    <div class="card">
+      <h3>🔗 URL Tricks</h3>
+      <p>Attackers use lookalike domains such as <code>paypa1.com</code>, <code>netfl1x-billing.com</code>,
+      or add extra words like <code>bank-login-secure.com</code>. Always read the URL carefully,
+      especially right before the first single "/".</p>
+    </div>
+    <div class="card">
+      <h3>🔒 HTTPS Isn't Everything</h3>
+      <p>A padlock icon only means the connection is encrypted — it does <strong>not</strong> mean the
+      site is legitimate. Scammers can get HTTPS certificates too. Always verify the domain name itself.</p>
+    </div>
+    <div class="card">
+      <h3>🎨 Design & Content Issues</h3>
+      <p>Look for low-quality logos, broken layouts, outdated copyright years, missing "Contact Us" or
+      "About" pages, and pop-ups demanding immediate login.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOCIAL ENGINEERING ============ -->
+<section id="social-engineering" class="section">
+  <div class="section-head">
+    <p class="eyebrow">05 · Psychology</p>
+    <h2>Social Engineering Tactics</h2>
+  </div>
+  <div class="grid-4">
+    <div class="card tactic-card">
+      <div class="type-icon">⏰</div>
+      <h3>Urgency</h3>
+      <p>"Act within 24 hours or your account will be closed." Pressure stops people from thinking clearly.</p>
+    </div>
+    <div class="card tactic-card">
+      <div class="type-icon">😨</div>
+      <h3>Fear</h3>
+      <p>"Suspicious login detected." Fear of loss or punishment pushes victims to comply immediately.</p>
+    </div>
+    <div class="card tactic-card">
+      <div class="type-icon">🤝</div>
+      <h3>Trust</h3>
+      <p>Impersonating a known brand, coworker, or authority figure to lower your guard.</p>
+    </div>
+    <div class="card tactic-card">
+      <div class="type-icon">💰</div>
+      <h3>Greed</h3>
+      <p>"You've won a prize!" Promises of free money or rewards exploit desire for quick gain.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREVENTION TIPS ============ -->
+<section id="prevention" class="section section-alt">
+  <div class="section-head">
+    <p class="eyebrow">06 · Defense</p>
+    <h2>Prevention Tips</h2>
+  </div>
+  <div class="grid-2">
+    <div class="card highlight-card">
+      <ul class="check-list">
+        <li>Use <strong>strong, unique passwords</strong> for every account — consider a password manager.</li>
+        <li>Enable <strong>Two-Factor Authentication (2FA)</strong> wherever possible.</li>
+        <li>Never click links or open attachments from unexpected messages.</li>
+        <li>Type known website addresses directly instead of clicking links.</li>
+        <li>Verify requests for money or information through a separate channel (call the company directly).</li>
+        <li>Keep software, browsers, and antivirus tools up to date.</li>
+        <li>Report suspicious emails to your IT/security team instead of ignoring them.</li>
+      </ul>
+    </div>
+    <div class="card text-card">
+      <h3>Remember:</h3>
+      <p>No legitimate bank, company, or government agency will ever ask you to share your password
+      or OTP over email, text, or phone. When in doubt, pause, verify independently, and never let
+      urgency make the decision for you.</p>
+      <div class="tip-box">💡 <strong>Golden Rule:</strong> If a message creates panic and demands
+      instant action — stop. That reaction is the attack.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REAL WORLD EXAMPLES ============ -->
+<section id="examples" class="section">
+  <div class="section-head">
+    <p class="eyebrow">07 · Case Studies</p>
+    <h2>Real-World Phishing Examples</h2>
+  </div>
+  <div class="grid-3">
+    <div class="card example-card">
+      <h3>🏦 Fake Bank Alert</h3>
+      <p>Victims receive an SMS/email claiming their bank account is "blocked" and must be
+      "reactivated" by entering login details on a fake bank-lookalike page.</p>
+    </div>
+    <div class="card example-card">
+      <h3>🔑 Fake OTP Request</h3>
+      <p>A caller pretends to be from your bank and asks you to "confirm" the OTP you just received
+      to "cancel a fraudulent transaction" — the OTP is then used to steal your money.</p>
+    </div>
+    <div class="card example-card">
+      <h3>🎁 Lottery / Prize Scam</h3>
+      <p>A message claims you've won a lottery or lucky draw you never entered, asking for a
+      "processing fee" or personal details to release the prize.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section id="quiz" class="section section-alt quiz-section">
+  <div class="section-head">
+    <p class="eyebrow">08 · Test Yourself</p>
+    <h2>Interactive Phishing Quiz</h2>
+    <p class="section-sub">Answer the questions below to see how well you can spot a phishing attempt.</p>
+  </div>
+
+  <div id="quizContainer" class="quiz-container"></div>
+
+  <div id="quizResult" class="quiz-result hidden">
+    <h3>Your Score: <span id="scoreText"></span></h3>
+    <p id="scoreMsg"></p>
+    <button id="retryBtn" class="btn btn-primary">Retry Quiz</button>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>PhishGuard Training — Built for awareness, not affiliated with any real company mentioned.</p>
+  <p class="footer-sub">Stay skeptical. Stay safe. 🛡️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
